@@ -47,12 +47,5 @@ export async function POST(request: Request) {
 }
 
 export async function GET() {
-  return Response.json(
-    {
-      success: true,
-      message:
-        "Welcome to the VAPI API! Use POST requests to interact with the API.",
-    },
-    { status: 200 }
-  );
+  return Response.json({ success: true, data: "Thank you!" }, { status: 200 });
 }
